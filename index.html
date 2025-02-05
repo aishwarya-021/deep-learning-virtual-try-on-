@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenPose Virtual Try-On</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/56/1f/c3/561fc3efac0688b3db4644f9cb76366f.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 40px; /* Increased padding for broader nav bar */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px; /* Increased margin for broader spacing */
+            font-size: 20px; /* Increased font size */
+        }
+        nav a:hover {
+            color: #28a745;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 120px; /* Adjusted for nav height */
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        button {
+            display: block;
+            margin: 100px auto;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 25px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 20px; /* Increased padding for broader footer */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 18px; /* Increased font size */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Virtual Try-On</a>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#"></a>
+            <a href="#"></a>
+
+        </div>
+    </nav>
+
+    <h1>Welcome to the Virtual Try-On</h1>
+    <button onclick="openWebcam()">Try On Clothes</button>
+
+    <footer>
+       
+    </footer>
+
+    <script>
+        function openWebcam() {
+            window.open("/webcam", "_blank", "width=1280,height=720");
+        }
+    </script>
+</body>
+</html>
