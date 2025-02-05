@@ -1,6 +1,5 @@
 <br/>Dataset: [VITON_PLUS](https://1drv.ms/u/s!Ai8t8GAHdzVUiQQYX0azYhqIDPP6?e=4cpFTI)
 
-## what's new [Oct 2023]
 - Python 3.11 support.
   - torch=2.0.1
   - torchvision=0.15.2
